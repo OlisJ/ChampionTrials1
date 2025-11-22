@@ -5,21 +5,21 @@
         const portfolioData = [
             {
                 id: 1,
-                title: 'Neural Network',
+                title: 'Snake',
                 description: 'Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.',
                 image: 'images/neural-network.jpg',
                 tech: ['TensorFlow', 'Python', 'CUDA']
             },
             {
                 id: 2,
-                title: 'Quantum Cloud',
+                title: 'Mine Sweeper',
                 description: 'Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.',
                 image: 'images/quantum-cloud.jpg',
                 tech: ['AWS', 'Kubernetes', 'Docker']
             },
             {
                 id: 3,
-                title: 'Blockchain Vault',
+                title: 'Tic Tac Toe',
                 description: 'Secure decentralized storage solution using advanced encryption and distributed ledger technology.',
                 image: 'images/blockchain-vault.jpg',
                 tech: ['Ethereum', 'Solidity', 'Web3']
@@ -132,7 +132,7 @@
                     <h3 class="card-title">${data.title}</h3>
                     <p class="card-description">${data.description}</p>
                     <div class="card-tech">${techBadges}</div>
-                    <button class="card-cta" onclick="scrollToSection('about')">Explore</button>
+                    <button class="card-cta" onclick="location.href='signup.php'">Explore</button>
                 </div>
             `;
             
