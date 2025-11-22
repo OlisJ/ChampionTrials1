@@ -132,7 +132,7 @@
                     <h3 class="card-title">${data.title}</h3>
                     <p class="card-description">${data.description}</p>
                     <div class="card-tech">${techBadges}</div>
-                    <button class="card-cta" onclick="location.href='signup.php'">Explore</button>
+                    <button class="card-cta" onclick="location.href='library.php'">Explore</button>
                 </div>
             `;
             
@@ -354,23 +354,29 @@
 
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
+                const href = this.getAttribute('href');
                 
-                if (targetSection) {
-                    const headerHeight = header.offsetHeight;
-                    const targetPosition = targetSection.offsetTop - headerHeight;
+                // Only handle anchor links (starting with #)
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const targetId = href.substring(1);
+                    const targetSection = document.getElementById(targetId);
                     
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    navMenu.classList.remove('active');
-                    menuToggle.classList.remove('active');
+                    if (targetSection) {
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        navMenu.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    }
                 }
+                // For regular page links (login.php, signup.php, etc.), let them work normally
             });
         });
 

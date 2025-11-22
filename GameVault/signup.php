@@ -1,5 +1,5 @@
 <?php
-require('config.php');
+require('config.php'); // config.php now handles session_start
 
 $success = "";
 $error = "";
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       VALUES ('$firstname', '$lastname', '$email', '$hashed_password')";
 
             if (mysqli_query($con, $query)) {
-                header("Location: index.php");
+                header("Location: login.php?registered=1");
                 exit();
             } 
             else {

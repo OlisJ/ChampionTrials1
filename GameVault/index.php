@@ -1,6 +1,6 @@
- <?php
-     include("config.php");
- ?>
+<?php
+require("config.php"); // config.php now handles session_start
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +45,13 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#stats" class="nav-link">Metrics</a></li>
                 <li><a href="#skills" class="nav-link">Arsenal</a></li>
-                <li><a href="signup.php"nav-link">Sign Up</a></li>
+                <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] > 0): ?>
+                    <li><a href="library.php" class="nav-link">Library</a></li>
+                    <li><a href="logout.php" class="nav-link">Logout</a></li>
+                <?php else: ?>
+                    <li><a href="login.php" class="nav-link">Login</a></li>
+                    <li><a href="signup.php" class="nav-link">Sign Up</a></li>
+                <?php endif; ?>
             </ul>
             
             <div class="menu-toggle" id="menuToggle">
