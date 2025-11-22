@@ -95,7 +95,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                         <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Kubernetes</span>
                         <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Docker</span>
                     </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
+                    <a href="minesweeper/minesweeper.html" class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
             </div>
 
