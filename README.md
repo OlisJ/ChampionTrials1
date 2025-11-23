@@ -64,3 +64,7 @@ Git
 🔐 Default Admin Credentials
 Username: admin
 Password: admin123
+
+User Account:
+email: asd@gmail.com
+password: asd
