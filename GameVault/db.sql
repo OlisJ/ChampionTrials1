@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2025 at 10:26 AM
+-- Generation Time: Nov 23, 2025 at 03:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,6 +45,29 @@ INSERT INTO `admin` (`admin_id`, `username`, `email`, `password`, `created_at`) 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `game_requests`
+--
+
+CREATE TABLE `game_requests` (
+  `request_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `game_name` varchar(100) NOT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'pending',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `game_requests`
+--
+
+INSERT INTO `game_requests` (`request_id`, `user_id`, `game_name`, `status`, `created_at`) VALUES
+(1, 11, 'Space Invaders', 'approved', '2025-11-23 10:38:48'),
+(2, 11, 'Plants vs Zombies', 'rejected', '2025-11-23 10:39:36'),
+(3, 11, 'csgo', 'rejected', '2025-11-23 12:49:45');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -78,6 +101,13 @@ ALTER TABLE `admin`
   ADD UNIQUE KEY `email` (`email`);
 
 --
+-- Indexes for table `game_requests`
+--
+ALTER TABLE `game_requests`
+  ADD PRIMARY KEY (`request_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -92,6 +122,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `admin`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `game_requests`
+--
+ALTER TABLE `game_requests`
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
