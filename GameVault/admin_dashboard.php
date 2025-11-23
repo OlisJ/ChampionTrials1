@@ -21,6 +21,29 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
     }
 }
 
+// Handle delete game request
+if (isset($_GET['delete_request']) && is_numeric($_GET['delete_request'])) {
+    $request_id = (int)$_GET['delete_request'];
+    $delete_query = "DELETE FROM game_requests WHERE request_id = $request_id";
+    if (mysqli_query($con, $delete_query)) {
+        $success = "Game request deleted successfully!";
+    } else {
+        $error = "Error: " . mysqli_error($con);
+    }
+}
+
+// Handle update game request status
+if (isset($_GET['update_status']) && is_numeric($_GET['update_status']) && isset($_GET['status'])) {
+    $request_id = (int)$_GET['update_status'];
+    $status = mysqli_real_escape_string($con, $_GET['status']);
+    $update_query = "UPDATE game_requests SET status = '$status' WHERE request_id = $request_id";
+    if (mysqli_query($con, $update_query)) {
+        $success = "Request status updated successfully!";
+    } else {
+        $error = "Error: " . mysqli_error($con);
+    }
+}
+
 // Handle add user
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_user'])) {
     $firstname = mysqli_real_escape_string($con, trim($_POST['firstname']));
@@ -57,6 +80,19 @@ $result = mysqli_query($con, $query);
 if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         $users[] = $row;
+    }
+}
+
+// Get all game requests
+$game_requests = [];
+$requests_query = "SELECT gr.request_id, gr.game_name, gr.status, gr.created_at, u.firstname, u.lastname, u.email 
+                   FROM game_requests gr 
+                   LEFT JOIN users u ON gr.user_id = u.user_id 
+                   ORDER BY gr.created_at DESC";
+$requests_result = mysqli_query($con, $requests_query);
+if ($requests_result) {
+    while ($row = mysqli_fetch_assoc($requests_result)) {
+        $game_requests[] = $row;
     }
 }
 ?>
@@ -315,6 +351,63 @@ if ($result) {
             </table>
             <?php else: ?>
             <p style="color: var(--text-secondary); text-align: center; padding: 20px;">No users found.</p>
+            <?php endif; ?>
+        </div>
+
+        <div class="admin-section">
+            <h2 class="section-title">Game Requests (<?php echo count($game_requests); ?>)</h2>
+            <?php if (count($game_requests) > 0): ?>
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game Name</th>
+                        <th>Requested By</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($game_requests as $request): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($request['request_id']); ?></td>
+                        <td><?php echo htmlspecialchars($request['game_name']); ?></td>
+                        <td><?php echo htmlspecialchars(($request['firstname'] ?? 'Unknown') . ' ' . ($request['lastname'] ?? '') . ' (' . ($request['email'] ?? 'N/A') . ')'); ?></td>
+                        <td>
+                            <span style="padding: 4px 10px; border-radius: 5px; font-size: 12px; font-weight: bold;
+                                <?php 
+                                if ($request['status'] == 'approved') {
+                                    echo 'background: rgba(0, 255, 136, 0.2); color: var(--accent-green);';
+                                } elseif ($request['status'] == 'rejected') {
+                                    echo 'background: rgba(255, 51, 51, 0.2); color: var(--accent-red);';
+                                } else {
+                                    echo 'background: rgba(255, 255, 255, 0.1); color: var(--text-secondary);';
+                                }
+                                ?>">
+                                <?php echo strtoupper(htmlspecialchars($request['status'])); ?>
+                            </span>
+                        </td>
+                        <td><?php echo date('M d, Y', strtotime($request['created_at'])); ?></td>
+                        <td>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <?php if ($request['status'] == 'pending'): ?>
+                                <a href="?update_status=<?php echo $request['request_id']; ?>&status=approved" 
+                                   style="padding: 6px 12px; background: var(--accent-green); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12px; text-decoration: none; display: inline-block;">Approve</a>
+                                <a href="?update_status=<?php echo $request['request_id']; ?>&status=rejected" 
+                                   style="padding: 6px 12px; background: var(--accent-red); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 12px; text-decoration: none; display: inline-block;">Reject</a>
+                                <?php endif; ?>
+                                <a href="?delete_request=<?php echo $request['request_id']; ?>" 
+                                   class="delete-btn" 
+                                   onclick="return confirm('Delete this request?');">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <?php else: ?>
+            <p style="color: var(--text-secondary); text-align: center; padding: 20px;">No game requests found.</p>
             <?php endif; ?>
         </div>
     </div>

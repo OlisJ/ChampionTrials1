@@ -14,6 +14,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Library - The GameVault</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 1200px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -62,7 +75,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
         </div>
         
         <!-- Static Game Cards (from carousel) -->
-        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px 20px;">
+        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 40px 20px;">
             <!-- Snake -->
             <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
@@ -169,6 +182,31 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                     </div>
                     <a href="sudoku/sudoku.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Game Request Section -->
+        <div style="max-width: 1600px; margin: 40px auto; padding: 0 20px;">
+            <div style="background: var(--carbon-medium); border: 1px solid var(--metal-dark); border-radius: 15px; padding: 30px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);">
+                <h2 style="font-size: 28px; color: var(--text-primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent-purple); padding-bottom: 10px;">Request a Game</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Have a game in mind? Let us know and we'll consider adding it to our collection!</p>
+                <form method="POST" action="submit_game_request.php" style="display: flex; gap: 15px; align-items: flex-end; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <label for="game_name" style="display: block; color: var(--text-primary); margin-bottom: 8px; font-weight: bold;">Game Name</label>
+                        <input type="text" id="game_name" name="game_name" required style="width: 100%; padding: 12px; background: var(--carbon-dark); border: 1px solid var(--metal-dark); border-radius: 8px; color: var(--text-primary); font-size: 16px; box-sizing: border-box;" placeholder="Enter game name...">
+                    </div>
+                    <button type="submit" style="padding: 12px 30px; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; font-size: 16px; height: fit-content;">Submit Request</button>
+                </form>
+                <?php if (isset($_GET['request_success'])): ?>
+                <div style="margin-top: 20px; padding: 15px; background: rgba(0, 255, 136, 0.2); color: var(--accent-green); border: 1px solid var(--accent-green); border-radius: 8px; text-align: center;">
+                    Game request submitted successfully! We'll review it soon.
+                </div>
+                <?php endif; ?>
+                <?php if (isset($_GET['request_error'])): ?>
+                <div style="margin-top: 20px; padding: 15px; background: rgba(255, 51, 51, 0.2); color: var(--accent-red); border: 1px solid var(--accent-red); border-radius: 8px; text-align: center;">
+                    Error submitting request. Please try again.
+                </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
