@@ -138,11 +138,11 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                         <img src="images/tictactoe.png" alt="Tic Tac Toe" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Tic Tac Toe</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic strategy game where two players take turns marking spaces in a 3x3 grid. Get three in a row to win!</p>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic strategy game where you can play with a friend locally or challenge the AI. Get three in a row to win!</p>
                     <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
                         <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Strategy</span>
                         <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Classic</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Multiplayer</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">AI & Multiplayer</span>
                     </div>
                     <a href="tictactoe/tictactoe.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>

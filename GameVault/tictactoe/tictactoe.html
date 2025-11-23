@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe - Game Mode</title>
     <link rel="stylesheet" href="tictactoe.css">
-    <script src="tictactoe.js"></script>
 </head>
 <body>
     <a href="../library.php" id="backBtn">← Back to Library</a>
     <h1>Tic Tac Toe</h1>
     <hr>
-    <br>
-    <!-- 3x3 -->
-    <div id="board">
+    <div class="menu-container">
+        <h2>Choose Game Mode</h2>
+        <div class="button-container">
+            <a href="tictactoe_local.html" class="game-mode-btn">
+                <div class="btn-icon">👥</div>
+                <div class="btn-text">
+                    <div class="btn-title">Play with a Friend</div>
+                    <div class="btn-subtitle">Local Multiplayer</div>
+                </div>
+            </a>
+            <a href="tictactoe_ai.html" class="game-mode-btn">
+                <div class="btn-icon">🤖</div>
+                <div class="btn-text">
+                    <div class="btn-title">Play with AI</div>
+                    <div class="btn-subtitle">Challenge the Computer</div>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 </html>
