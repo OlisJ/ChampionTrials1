@@ -58,7 +58,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
     <section class="stats-section" id="library" style="padding-top: 150px;">
         <div class="section-header">
             <h2 class="section-title">Game Library</h2>
-            <p class="section-subtitle"><?php echo isset($_SESSION['user_name']) ? 'Welcome, ' . htmlspecialchars($_SESSION['user_name']) . '! ' : ''; ?>Explore our collection of premium games</p>
+            <p class="section-subtitle"><?php echo isset($_SESSION['user_name']) ? 'Welcome, ' . htmlspecialchars($_SESSION['user_name']) . '! ' : ''; ?>Explore our collection of premium retro games</p>
         </div>
         
         <!-- Static Game Cards (from carousel) -->
@@ -71,11 +71,11 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                         <img src="images/neural-network.jpg" alt="Snake" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Snake</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">TensorFlow</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Python</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">CUDA</span>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you control a snake to eat food and grow longer. Avoid hitting the walls or yourself!</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Arcade</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Classic</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Retro</span>
                     </div>
                     <a href="snake/snake.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
@@ -89,103 +89,85 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                         <img src="images/quantum-cloud.jpg" alt="Mine Sweeper" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Mine Sweeper</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">AWS</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Kubernetes</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Docker</span>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic puzzle game where you must clear a minefield without detonating any mines. Use logic and numbers to find all the safe squares!</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Puzzle</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Strategy</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Classic</span>
                     </div>
-                    <a href="minesweeper/minesweeper.html" class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
+                    <a href="minesweeper/minesweeper.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
+                </div>
+            </div>
+
+            <!-- Pac-Man -->
+            <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
+                <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
+                    <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">03</div>
+                    <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
+                        <img src="images/cyber-defense.jpg" alt="Pac-Man" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Pac-Man</h3>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you navigate through mazes, eat dots, and avoid ghosts in this retro gaming experience.</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Retro</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Arcade</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Classic</span>
+                    </div>
+                    <a href="Pac-Man/pacman.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
             </div>
 
             <!-- Tic Tac Toe -->
             <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
-                    <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">03</div>
-                    <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/blockchain-vault.jpg" alt="Tic Tac Toe" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Tic Tac Toe</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Secure decentralized storage solution using advanced encryption and distributed ledger technology.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Ethereum</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Solidity</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Web3</span>
-                    </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
-                </div>
-            </div>
-
-            <!-- Cyber Defense -->
-            <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
-                <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">04</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/cyber-defense.jpg" alt="Cyber Defense" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/data-nexus.jpg" alt="Tic Tac Toe" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Cyber Defense</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Military-grade cybersecurity framework with real-time threat detection and automated response.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Zero Trust</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">AI Defense</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Encryption</span>
+                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Tic Tac Toe</h3>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic strategy game where two players take turns marking spaces in a 3x3 grid. Get three in a row to win!</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Strategy</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Classic</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Multiplayer</span>
                     </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
+                    <a href="tictactoe/tictactoe.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
             </div>
 
-            <!-- Data Nexus -->
+            <!-- Breakout -->
             <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">05</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/data-nexus.jpg" alt="Data Nexus" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/ar-interface.jpg" alt="Breakout" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Data Nexus</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Big data processing platform capable of analyzing petabytes of information in real-time.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Apache Spark</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Hadoop</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Kafka</span>
+                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Breakout</h3>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you control a paddle to bounce a ball and break all the blocks. Test your reflexes!</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Arcade</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Retro</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Action</span>
                     </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
+                    <a href="breakout/breakout.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
             </div>
 
-            <!-- AR Interface -->
+            <!-- Sudoku -->
             <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">06</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/ar-interface.jpg" alt="AR Interface" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/blockchain-vault.jpg" alt="Sudoku" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">AR Interface</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Augmented reality system for immersive data visualization and interactive experiences.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Unity</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">ARCore</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Computer Vision</span>
+                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Sudoku</h3>
+                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic number puzzle game where you fill a 9x9 grid so that each row, column, and 3x3 box contains all digits from 1 to 9.</p>
+                    <div class="card-tech" style="display: flex; flex-wrap: nowrap; gap: 6px; margin-bottom: 20px;">
+                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Puzzle</span>
+                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Logic</span>
+                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 4px 10px; border-radius: 20px; font-size: 11px; white-space: nowrap;">Brain</span>
                     </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
-                </div>
-            </div>
-
-            <!-- IoT Matrix -->
-            <div class="stat-card game-card" style="position: relative; transform: none; opacity: 1;">
-                <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
-                    <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">07</div>
-                    <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/iot-matrix.jpg" alt="IoT Matrix" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">IoT Matrix</h3>
-                    <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Intelligent IoT ecosystem connecting millions of devices with edge computing capabilities.</p>
-                    <div class="card-tech" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                        <span class="tech-badge" style="background: var(--accent-purple); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">MQTT</span>
-                        <span class="tech-badge" style="background: var(--accent-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">Edge AI</span>
-                        <span class="tech-badge" style="background: var(--accent-cyan); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px;">5G</span>
-                    </div>
-                    <button class="card-cta" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</button>
+                    <a href="sudoku/sudoku.html" class="card-cta" style="display: inline-block; background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue)); color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: transform 0.2s; text-decoration: none; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Play Game</a>
                 </div>
             </div>
         </div>

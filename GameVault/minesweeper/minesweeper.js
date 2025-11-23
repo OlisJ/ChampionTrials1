@@ -13,6 +13,7 @@ let gameOver = false;
 
 window.onload = function() {
     startGame();
+    document.getElementById("resetBtn").addEventListener("click", resetGame);
 }
 
 function setMines() {
@@ -175,4 +176,37 @@ function checkTile(r, c) {
         return 1;
     }
     return 0;
+}
+
+function resetGame() {
+    // Clear all tiles and their states before removing them
+    for (let r = 0; r < board.length; r++) {
+        if (board[r]) {
+            for (let c = 0; c < board[r].length; c++) {
+                if (board[r][c]) {
+                    let tile = board[r][c];
+                    tile.innerText = "";
+                    tile.className = "";
+                    tile.style.backgroundColor = "";
+                    tile.style.color = "";
+                }
+            }
+        }
+    }
+    
+    // Clear the board HTML
+    document.getElementById("board").innerHTML = "";
+    
+    // Reset all variables
+    board = [];
+    minesLocation = [];
+    tilesClicked = 0;
+    flagEnabled = false;
+    gameOver = false;
+    
+    // Reset flag button style
+    document.getElementById("flag-button").style.backgroundColor = "";
+    
+    // Restart the game
+    startGame();
 }

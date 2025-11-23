@@ -6,51 +6,44 @@
             {
                 id: 1,
                 title: 'Snake',
-                description: 'Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.',
+                description: 'Classic arcade game where you control a snake to eat food and grow longer. Avoid hitting the walls or yourself!',
                 image: 'images/neural-network.jpg',
-                tech: ['TensorFlow', 'Python', 'CUDA']
+                tech: ['Arcade', 'Classic', 'Retro']
             },
             {
                 id: 2,
                 title: 'Mine Sweeper',
-                description: 'Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.',
+                description: 'Classic puzzle game where you must clear a minefield without detonating any mines. Use logic and numbers to find all the safe squares!',
                 image: 'images/quantum-cloud.jpg',
-                tech: ['AWS', 'Kubernetes', 'Docker']
-            },
-            {
-                id: 3,
-                title: 'Tic Tac Toe',
-                description: 'Secure decentralized storage solution using advanced encryption and distributed ledger technology.',
-                image: 'images/blockchain-vault.jpg',
-                tech: ['Ethereum', 'Solidity', 'Web3']
+                tech: ['Puzzle', 'Strategy', 'Classic']
             },
             {
                 id: 4,
-                title: 'Cyber Defense',
-                description: 'Military-grade cybersecurity framework with real-time threat detection and automated response.',
+                title: 'Pac-Man',
+                description: 'Classic arcade game where you navigate through mazes, eat dots, and avoid ghosts in this retro gaming experience.',
                 image: 'images/cyber-defense.jpg',
-                tech: ['Zero Trust', 'AI Defense', 'Encryption']
+                tech: ['Retro', 'Arcade', 'Classic']
             },
             {
                 id: 5,
-                title: 'Data Nexus',
-                description: 'Big data processing platform capable of analyzing petabytes of information in real-time.',
+                title: 'Tic Tac Toe',
+                description: 'Classic strategy game where two players take turns marking spaces in a 3x3 grid. Get three in a row to win!',
                 image: 'images/data-nexus.jpg',
-                tech: ['Apache Spark', 'Hadoop', 'Kafka']
+                tech: ['Strategy', 'Classic', 'Multiplayer']
             },
             {
                 id: 6,
-                title: 'AR Interface',
-                description: 'Augmented reality system for immersive data visualization and interactive experiences.',
+                title: 'Breakout',
+                description: 'Classic arcade game where you control a paddle to bounce a ball and break all the blocks. Test your reflexes!',
                 image: 'images/ar-interface.jpg',
-                tech: ['Unity', 'ARCore', 'Computer Vision']
+                tech: ['Arcade', 'Retro', 'Action']
             },
             {
                 id: 7,
-                title: 'IoT Matrix',
-                description: 'Intelligent IoT ecosystem connecting millions of devices with edge computing capabilities.',
-                image: 'images/iot-matrix.jpg',
-                tech: ['MQTT', 'Edge AI', '5G']
+                title: 'Sudoku',
+                description: 'Classic number puzzle game where you fill a 9x9 grid so that each row, column, and 3x3 box contains all digits from 1 to 9.',
+                image: 'images/blockchain-vault.jpg',
+                tech: ['Puzzle', 'Logic', 'Brain']
             }
         ];
 

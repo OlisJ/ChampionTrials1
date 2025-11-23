@@ -52,6 +52,7 @@ require("config.php"); // config.php now handles session_start
                     <li><a href="login.php" class="nav-link">Login</a></li>
                     <li><a href="signup.php" class="nav-link">Sign Up</a></li>
                 <?php endif; ?>
+                <li><a href="admin_login.php" class="nav-link" style="color: var(--accent-cyan);">Admin</a></li>
             </ul>
             
             <div class="menu-toggle" id="menuToggle">
