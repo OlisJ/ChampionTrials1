@@ -91,33 +91,36 @@ require("config.php"); // config.php now handles session_start
             </h2>
             
             <p class="philosophy-subheading">
-                At PRISM FLUX, we transform complex challenges into elegant solutions through the convergence of 
-                cutting-edge technology and visionary design. Every project is a spectrum of possibilities 
-                waiting to be discovered.
+                Welcome to GameVault, where classic arcade games meet modern web technology. Dive into a curated 
+                collection of timeless favorites and discover new challenges. Every game is a new adventure 
+                waiting to be explored.
             </p>
             
             <div class="philosophy-pillars">
                 <div class="pillar">
-                    <div class="pillar-icon">💎</div>
-                    <h3 class="pillar-title">Innovation</h3>
+                    <div class="pillar-icon">🎮</div>
+                    <h3 class="pillar-title">Classic Games</h3>
                     <p class="pillar-description">
-                        Breaking boundaries with revolutionary approaches that redefine industry standards and push the limits of what's possible. Elevate your designs with premium vector stickers from <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a>.
+                        Experience the nostalgia of timeless arcade classics. From Pac-Man to Snake, Minesweeper to 
+                        Sudoku, we've gathered the best retro games that defined generations of gaming.
                     </p>
                 </div>
                 
                 <div class="pillar">
-                    <div class="pillar-icon">🔬</div>
-                    <h3 class="pillar-title">Precision</h3>
+                    <div class="pillar-icon">⚡</div>
+                    <h3 class="pillar-title">Instant Play</h3>
                     <p class="pillar-description">
-                        Meticulous attention to detail ensures every pixel, every line of code, and every interaction is perfectly crafted by <a href="https://templatemo.com" rel="nofollow" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">TemplateMo</a>, enhanced with stunning visuals from <a href="https://unsplash.com" rel="nofollow" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">Unsplash</a>.
+                        No downloads, no installations. Jump straight into action with our browser-based games. 
+                        All games are optimized for smooth performance and responsive gameplay across all devices.
                     </p>
                 </div>
                 
                 <div class="pillar">
-                    <div class="pillar-icon">∞</div>
-                    <h3 class="pillar-title">Evolution</h3>
+                    <div class="pillar-icon">🏆</div>
+                    <h3 class="pillar-title">Your Library</h3>
                     <p class="pillar-description">
-                        Continuous adaptation and growth, staying ahead of trends while building timeless solutions for tomorrow. Boost your productivity with the easy-to-use timer tools at <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a>.
+                        Create your personal game library, track your progress, and save your achievements. 
+                        Build your gaming profile and compete with friends in your favorite games.
                     </p>
                 </div>
             </div>
@@ -132,58 +135,57 @@ require("config.php"); // config.php now handles session_start
     <section class="stats-section" id="stats">
         <div class="section-header">
             <h2 class="section-title">Performance Metrics</h2>
-            <p class="section-subtitle">Real-time analytics and achievements powered by cutting-edge technology</p>
+            <p class="section-subtitle">Track your gaming journey with real-time statistics and achievements. See how you stack up against players worldwide and celebrate your milestones as you master each game.</p>
         </div>
         
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-icon">🚀</div>
-                <div class="stat-number" data-target="150">0</div>
-                <div class="stat-label">Projects Completed</div>
-                <p class="stat-description">Successfully delivered enterprise-level solutions across multiple industries with 100% on-time completion rate.</p>
+                <div class="stat-icon">🎮</div>
+                <div class="stat-number" data-target="6">0</div>
+                <div class="stat-label">Games Available</div>
+                <p class="stat-description">A curated collection of classic arcade games including Pac-Man, Snake, Minesweeper, Sudoku, Tic-Tac-Toe, and Breakout. More games are being added regularly to expand your gaming library.</p>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">⚡</div>
-                <div class="stat-number" data-target="99">0</div>
-                <div class="stat-label">Client Satisfaction %</div>
-                <p class="stat-description">Maintaining excellence through continuous feedback loops and agile development methodologies.</p>
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Games Played</div>
+                <p class="stat-description">Join thousands of players who have enjoyed hours of entertainment across our platform. Every game session contributes to our growing community of gaming enthusiasts.</p>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">🏆</div>
-                <div class="stat-number" data-target="25">0</div>
-                <div class="stat-label">Industry Awards</div>
-                <p class="stat-description">Recognized globally for innovation in digital transformation and technological advancement.</p>
+                <div class="stat-number" data-target="5000">0</div>
+                <div class="stat-label">High Scores Set</div>
+                <p class="stat-description">Players have achieved incredible milestones and set impressive records. Challenge yourself to beat the top scores and claim your spot on the leaderboard.</p>
             </div>
             
             <div class="stat-card">
-                <div class="stat-icon">💎</div>
-                <div class="stat-number" data-target="500">0</div>
-                <div class="stat-label">Code Commits Daily</div>
-                <p class="stat-description">Continuous integration and deployment with automated testing ensuring maximum code quality.</p>
+                <div class="stat-icon">👥</div>
+                <div class="stat-number" data-target="2500">0</div>
+                <div class="stat-label">Active Players</div>
+                <p class="stat-description">A thriving community of gamers who return daily to play their favorites and discover new challenges. Connect with fellow players and share your achievements.</p>
             </div>
         </div>
     </section>
 
-    <!-- Enhanced Skills Section - Technical Arsenal -->
+    <!-- Enhanced Skills Section - Game Collection -->
     <section class="skills-section" id="skills">
         <div class="skills-container">
             <div class="section-header">
-                <h2 class="section-title">Technical Arsenal</h2>
-                <p class="section-subtitle">Mastery of cutting-edge technologies and frameworks</p>
+                <h2 class="section-title">Game Collection</h2>
+                <p class="section-subtitle">Explore our curated selection of classic arcade games. Each game offers unique challenges and endless entertainment.</p>
             </div>
             
             <div class="skill-categories">
-                <div class="category-tab active" data-category="all">All Skills</div>
-                <div class="category-tab" data-category="frontend">Frontend</div>
-                <div class="category-tab" data-category="backend">Backend</div>
-                <div class="category-tab" data-category="cloud">Cloud & DevOps</div>
-                <div class="category-tab" data-category="emerging">Emerging Tech</div>
+                <div class="category-tab active" data-category="all">All Games</div>
+                <div class="category-tab" data-category="arcade">Arcade</div>
+                <div class="category-tab" data-category="puzzle">Puzzle</div>
+                <div class="category-tab" data-category="strategy">Strategy</div>
             </div>
 
             <div class="skills-hexagon-grid" id="skillsGrid">
-                <!-- Hexagonal skill items will be generated by JavaScript -->
+                <!-- Hexagonal game items will be generated by JavaScript -->
             </div>
         </div>
     </section>
@@ -201,12 +203,12 @@ require("config.php"); // config.php now handles session_start
                         </div>
                     </div>
                     <span class="logo-text">
-                        <span class="prism">PRISM</span>
-                        <span class="flux">FLUX</span>
+                        <span class="prism">Game</span>
+                        <span class="flux">Vault</span>
                     </span>
                 </div>
                 <p class="footer-description">
-                    Refracting complex challenges into brilliant solutions through the convergence of art, science, and technology.
+                    Your ultimate destination for classic arcade games. Play, compete, and relive the golden age of gaming with our curated collection of timeless favorites.
                 </p>
                 <div class="footer-social">
                     <a href="#" class="social-icon">f</a>
@@ -217,42 +219,42 @@ require("config.php"); // config.php now handles session_start
             </div>
             
             <div class="footer-section">
-                <h4>Services</h4>
+                <h4>Games</h4>
                 <div class="footer-links">
-                    <a href="#">Web Development</a>
-                    <a href="#">App Development</a>
-                    <a href="#">Cloud Solutions</a>
-                    <a href="#">AI Integration</a>
+                    <a href="#skills">All Games</a>
+                    <a href="#skills">Arcade Games</a>
+                    <a href="#skills">Puzzle Games</a>
+                    <a href="#skills">Strategy Games</a>
                 </div>
             </div>
             
             <div class="footer-section">
-                <h4>Company</h4>
+                <h4>Account</h4>
                 <div class="footer-links">
-                    <a href="#">About Us</a>
-                    <a href="#">Our Team</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Press Kit</a>
+                    <a href="login.php">Login</a>
+                    <a href="signup.php">Sign Up</a>
+                    <a href="library.php">My Library</a>
+                    <a href="#about">About</a>
                 </div>
             </div>
             
             <div class="footer-section">
-                <h4>Resources</h4>
+                <h4>Support</h4>
                 <div class="footer-links">
-                    <a href="#">Documentation</a>
-                    <a href="#">API Reference</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Support</a>
+                    <a href="#stats">Leaderboards</a>
+                    <a href="submit_game_request.php">Request Game</a>
+                    <a href="#about">How to Play</a>
+                    <a href="#">Contact</a>
                 </div>
             </div>
         </div>
         
         <div class="footer-bottom">
             <div class="copyright">
-                © 2026 PRISM FLUX. All rights reserved.
+                © 2026 GameVault. All rights reserved.
             </div>
             <div class="footer-credits">
-                Designed by <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a>
+                Designed by Our Team
             </div>
         </div>
     </footer>

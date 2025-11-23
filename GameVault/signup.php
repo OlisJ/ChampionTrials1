@@ -74,11 +74,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <!-- LEFT SIDE INFO (KEPT EXACTLY LIKE YOU HAD IT) -->
             <div class="contact-info">
 
-                <a href="https://maps.google.com/?q=Prishtina+Pjeter+Bogdani" target="_blank" class="info-item">
+                    <a href="https://maps.google.com/?q=Prishtina+Pashko+Vasa" target="_blank" class="info-item">
                     <div class="info-icon">📍</div>
                     <div class="info-text">
                         <h4>Location</h4>
-                        <p>Prishtina, Pjetër Bogdani</p>
+                        <p>Prishtina, Pashko Vasa</p>
                     </div>
                 </a>
 

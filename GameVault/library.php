@@ -81,7 +81,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">01</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/neural-network.jpg" alt="Snake" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/snake.png" alt="Snake" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Snake</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you control a snake to eat food and grow longer. Avoid hitting the walls or yourself!</p>
@@ -99,7 +99,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">02</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/quantum-cloud.jpg" alt="Mine Sweeper" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/minesweeper.png" alt="Mine Sweeper" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Mine Sweeper</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic puzzle game where you must clear a minefield without detonating any mines. Use logic and numbers to find all the safe squares!</p>
@@ -117,7 +117,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">03</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/cyber-defense.jpg" alt="Pac-Man" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/pacman.png" alt="Pac-Man" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Pac-Man</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you navigate through mazes, eat dots, and avoid ghosts in this retro gaming experience.</p>
@@ -135,7 +135,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">04</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/data-nexus.jpg" alt="Tic Tac Toe" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/tictactoe.png" alt="Tic Tac Toe" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Tic Tac Toe</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic strategy game where two players take turns marking spaces in a 3x3 grid. Get three in a row to win!</p>
@@ -153,7 +153,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">05</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/ar-interface.jpg" alt="Breakout" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/breakout.png" alt="Breakout" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Breakout</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic arcade game where you control a paddle to bounce a ball and break all the blocks. Test your reflexes!</p>
@@ -171,7 +171,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 <div class="card" style="background: var(--bg-secondary); border-radius: 15px; padding: 30px; height: 100%; display: flex; flex-direction: column;">
                     <div class="card-number" style="position: absolute; top: 20px; right: 20px; font-size: 48px; font-weight: bold; color: var(--accent-purple); opacity: 0.3;">06</div>
                     <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
-                        <img src="images/blockchain-vault.jpg" alt="Sudoku" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/sudoku.png" alt="Sudoku" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 class="card-title" style="font-size: 24px; margin-bottom: 15px; color: var(--text-primary);">Sudoku</h3>
                     <p class="card-description" style="color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1;">Classic number puzzle game where you fill a 9x9 grid so that each row, column, and 3x3 box contains all digits from 1 to 9.</p>
@@ -273,7 +273,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] <= 0) {
                 © 2026 GameVault. All rights reserved.
             </div>
             <div class="footer-credits">
-                Designed by <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a>
+                Designed by <a href="https://instagram/olisjasharii" rel="nofollow" target="_blank">Olis Jashari</a>
             </div>
         </div>
     </footer>

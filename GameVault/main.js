@@ -7,60 +7,54 @@
                 id: 1,
                 title: 'Snake',
                 description: 'Classic arcade game where you control a snake to eat food and grow longer. Avoid hitting the walls or yourself!',
-                image: 'images/neural-network.jpg',
+                image: 'images/snake.png',
                 tech: ['Arcade', 'Classic', 'Retro']
             },
             {
                 id: 2,
                 title: 'Mine Sweeper',
                 description: 'Classic puzzle game where you must clear a minefield without detonating any mines. Use logic and numbers to find all the safe squares!',
-                image: 'images/quantum-cloud.jpg',
+                image: 'images/minesweeper.png',
                 tech: ['Puzzle', 'Strategy', 'Classic']
             },
             {
                 id: 4,
                 title: 'Pac-Man',
                 description: 'Classic arcade game where you navigate through mazes, eat dots, and avoid ghosts in this retro gaming experience.',
-                image: 'images/cyber-defense.jpg',
+                image: 'images/pacman.png',
                 tech: ['Retro', 'Arcade', 'Classic']
             },
             {
                 id: 5,
                 title: 'Tic Tac Toe',
                 description: 'Classic strategy game where two players take turns marking spaces in a 3x3 grid. Get three in a row to win!',
-                image: 'images/data-nexus.jpg',
+                image: 'images/tictactoe.png',
                 tech: ['Strategy', 'Classic', 'Multiplayer']
             },
             {
                 id: 6,
                 title: 'Breakout',
                 description: 'Classic arcade game where you control a paddle to bounce a ball and break all the blocks. Test your reflexes!',
-                image: 'images/ar-interface.jpg',
+                image: 'images/breakout.png',
                 tech: ['Arcade', 'Retro', 'Action']
             },
             {
                 id: 7,
                 title: 'Sudoku',
                 description: 'Classic number puzzle game where you fill a 9x9 grid so that each row, column, and 3x3 box contains all digits from 1 to 9.',
-                image: 'images/blockchain-vault.jpg',
+                image: 'images/sudoku.png',
                 tech: ['Puzzle', 'Logic', 'Brain']
             }
         ];
 
         // Skills data
         const skillsData = [
-            { name: 'React.js', icon: '⚛️', level: 95, category: 'frontend' },
-            { name: 'Node.js', icon: '🟢', level: 90, category: 'backend' },
-            { name: 'TypeScript', icon: '📘', level: 88, category: 'frontend' },
-            { name: 'AWS', icon: '☁️', level: 92, category: 'cloud' },
-            { name: 'Docker', icon: '🐳', level: 85, category: 'cloud' },
-            { name: 'Python', icon: '🐍', level: 93, category: 'backend' },
-            { name: 'Kubernetes', icon: '☸️', level: 82, category: 'cloud' },
-            { name: 'GraphQL', icon: '◈', level: 87, category: 'backend' },
-            { name: 'TensorFlow', icon: '🤖', level: 78, category: 'emerging' },
-            { name: 'Blockchain', icon: '🔗', level: 75, category: 'emerging' },
-            { name: 'Vue.js', icon: '💚', level: 85, category: 'frontend' },
-            { name: 'MongoDB', icon: '🍃', level: 90, category: 'backend' }
+            { name: 'Pac-Man', icon: '👻', level: 100, category: 'arcade' },
+            { name: 'Snake', icon: '🐍', level: 100, category: 'arcade' },
+            { name: 'Minesweeper', icon: '💣', level: 100, category: 'puzzle' },
+            { name: 'Sudoku', icon: '🔢', level: 100, category: 'puzzle' },
+            { name: 'Tic-Tac-Toe', icon: '⭕', level: 100, category: 'strategy' },
+            { name: 'Breakout', icon: '🎯', level: 100, category: 'arcade' }
         ];
 
         // Scroll to section function
