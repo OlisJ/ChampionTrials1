@@ -13,7 +13,7 @@ A modern web-based gaming platform featuring classic arcade games. Play timeless
 
 ✨ Features
 
-🎯 6 Classic Games — Pac-Man, Snake, Minesweeper, Sudoku, Tic-Tac-Toe, Breakout
+🎯 6 Classic Games — Pac-Man, Snake, Minesweeper, Sudoku, Tic-Tac-Toe(2 Gamemodes), Breakout
 
 👤 User Authentication — Secure login & registration
 
